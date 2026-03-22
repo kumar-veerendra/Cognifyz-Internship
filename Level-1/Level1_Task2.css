@@ -1,0 +1,163 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --surface: #161616;
+      --border: #2a2a2a;
+      --text: #f0f0f0;
+      --muted: #888;
+      --green: #00e676;
+      --blue: #2979ff;
+      --yellow: #ffea00;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Sora', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem 4rem;
+      gap: 2.5rem;
+    }
+
+    header {
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Space Mono', monospace;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      letter-spacing: 0.04em;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 480px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .card h2 {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+    .card h2 span {
+      color: var(--green);
+      margin-right: 0.5rem;
+    }
+
+    /* ─── 1. Color-changing button ─── */
+    #color-btn {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid var(--green);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--green);
+      font-family: 'Space Mono', monospace;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      transition: background 0.35s, color 0.35s, border-color 0.35s, transform 0.15s;
+    }
+    #color-btn:hover { filter: brightness(1.15); }
+    #color-btn:active { transform: scale(0.97); }
+
+    /* ─── 2. Greeting alert ─── */
+    #greeting-output {
+      margin-top: 1rem;
+      padding: 0.9rem 1.1rem;
+      border-radius: 8px;
+      background: #1e1e1e;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem;
+      min-height: 48px;
+      color: var(--yellow);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border: 1px solid #333;
+    }
+    #greeting-btn {
+      width: 100%;
+      padding: 0.85rem;
+      background: var(--yellow);
+      color: #0d0d0d;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.06em;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    #greeting-btn:hover { opacity: 0.9; }
+    #greeting-btn:active { transform: scale(0.97); }
+
+    /* ─── 3. Calculator ─── */
+    .calc-row {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .calc-row input {
+      flex: 1;
+      min-width: 80px;
+      padding: 0.75rem;
+      background: #111;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: 'Space Mono', monospace;
+      font-size: 1.1rem;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .calc-row input:focus { border-color: var(--blue); }
+    .calc-row .plus {
+      font-size: 1.4rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    #calc-btn {
+      width: 100%;
+      margin-top: 0.75rem;
+      padding: 0.85rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.06em;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    #calc-btn:hover { opacity: 0.9; }
+    #calc-btn:active { transform: scale(0.97); }
+    #calc-result {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 1.6rem;
+      color: var(--blue);
+      min-height: 2.2rem;
+      transition: all 0.3s;
+    }

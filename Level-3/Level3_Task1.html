@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level 3 – Task 1 | Image Gallery & Slideshow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Karla:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="Level3_Task1.css">
+  
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Image Manipulation</h1>
+    <p>Level 3 · Task 1 — Gallery with Lightbox &amp; Auto-Slideshow</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- ── PART 1: Thumbnail Gallery ── -->
+  <section class="gallery-section">
+    <div class="gallery-label">Part 01</div>
+    <h2 class="gallery-title">Click any thumbnail to enlarge</h2>
+
+    <div class="gallery-grid" id="gallery">
+      <!-- Thumbnails injected by JS -->
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt=""/>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <!-- ── PART 2: Slideshow ── -->
+  <section class="slideshow-section">
+    <div class="gallery-label">Part 02</div>
+    <h2 class="gallery-title" style="margin-bottom:1.25rem">Auto-Transitioning Slideshow</h2>
+    <div class="progress-bar" id="progress-bar"></div>
+    <div class="slideshow-wrapper" id="slideshow">
+      <!-- Slides injected by JS -->
+    </div>
+    <div class="slide-dots" id="dots"></div>
+  </section>
+
+  <script src="Level3_Task1.js"></script>
+
+</body>
+</html>

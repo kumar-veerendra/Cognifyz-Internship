@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level 2 – Task 1 | Front-end Frameworks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,400&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="Level2_Task1.css">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Front-end Frameworks</h1>
+    <p>Level 2 · Task 1 — Bootstrap Card Component &amp; Responsive Grid</p>
+  </header>
+
+  <div class="container">
+
+    <!-- ── Part 1: Responsive Card Component (Bootstrap + custom) ── -->
+    <div class="section-label">Part 01</div>
+    <h2 class="section-title">Responsive Card Component</h2>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="custom-card">
+          <img src="assets/L2T1_img1.jpg" alt="Coding"/>
+          <div class="card-body">
+            <span class="badge-tag">Development</span>
+            <h5 class="card-title">Mastering HTML & CSS</h5>
+            <p class="card-text">Learn to build beautiful, semantic web pages from scratch using modern HTML5 and CSS3 techniques.</p>
+            <div class="card-footer-row">
+              <span class="author">By Veerendra</span>
+              <button class="btn-read">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="custom-card">
+          <img src="assets/L2T1_img2.jpg" alt="JavaScript"/>
+          <div class="card-body">
+            <span class="badge-tag">JavaScript</span>
+            <h5 class="card-title">JavaScript Fundamentals</h5>
+            <p class="card-text">Dive into variables, functions, DOM manipulation, and events that power interactive web experiences.</p>
+            <div class="card-footer-row">
+              <span class="author">By Veerendra</span>
+              <button class="btn-read">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="custom-card">
+          <img src="assets/L2T1_img3.jpg" alt="Frameworks"/>
+          <div class="card-body">
+            <span class="badge-tag">Frameworks</span>
+            <h5 class="card-title">Exploring React & Bootstrap</h5>
+            <p class="card-text">Speed up your workflow using component-driven React and responsive utilities from Bootstrap 5.</p>
+            <div class="card-footer-row">
+              <span class="author">By Veerendra</span>
+              <button class="btn-read">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Part 2: Responsive Grid Layout (Bootstrap) ── -->
+    <div class="grid-section">
+      <div class="section-label">Part 02</div>
+      <h2 class="section-title">Responsive Grid Layout</h2>
+
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="grid-item">
+            <div class="icon">🎨</div>
+            <h5>Design</h5>
+            <p>Crafting visually stunning and user-friendly interfaces.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="grid-item">
+            <div class="icon">💻</div>
+            <h5>Development</h5>
+            <p>Building robust, scalable web applications.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="grid-item">
+            <div class="icon">📱</div>
+            <h5>Responsive</h5>
+            <p>Ensuring seamless experience across all screen sizes.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="grid-item">
+            <div class="icon">🚀</div>
+            <h5>Deploy</h5>
+            <p>Shipping products fast and efficiently to the web.</p>
+          </div>
+        </div>
+        <!-- Second row -->
+        <div class="col-12 col-md-4">
+          <div class="grid-item">
+            <div class="icon">🔧</div>
+            <h5>Tools</h5>
+            <p>VSCode, Git, Chrome DevTools and more.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="grid-item">
+            <div class="icon">📚</div>
+            <h5>Learning</h5>
+            <p>Continuously evolving with new technologies.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="grid-item">
+            <div class="icon">🤝</div>
+            <h5>Teamwork</h5>
+            <p>Collaborating and communicating effectively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+</body>
+</html>

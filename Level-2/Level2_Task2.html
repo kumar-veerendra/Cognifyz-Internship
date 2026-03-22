@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level 2 – Task 2 | Responsive Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="Level2_Task2.css">
+
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header>
+    <div class="nav-inner">
+      <div class="logo">Veer<span>Dev</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile drawer -->
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="#hero">Home</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="hero">
+    <div>
+      <h1>Responsive <em>Web Design</em> that adapts.</h1>
+      <p>Resize this window to see CSS media queries and a hamburger menu in action — seamless across every screen size.</p>
+      <div class="hero-btns">
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-outline">Learn More</button>
+      </div>
+    </div>
+    <img class="hero-img"
+      src="assets/L2T2_img1.jpg"
+      alt="Responsive design on multiple devices"/>
+  </section>
+
+  <!-- ── Features Grid ── -->
+  <section class="features" id="features">
+    <div class="features-inner">
+      <h2>Why Responsive Design?</h2>
+      <p>Build once, run everywhere — from desktop monitors to pocket-sized phones.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">📐</div>
+          <h3>Fluid Layouts</h3>
+          <p>Grid and Flexbox ensure content reflows gracefully at any viewport width.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📱</div>
+          <h3>Mobile First</h3>
+          <p>Starting from mobile keeps performance lean and progressively enhances upward.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎯</div>
+          <h3>Media Queries</h3>
+          <p>CSS breakpoints apply targeted styles at specific viewport thresholds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    &copy; 2026 Veerendra Kumar &mdash; Cognifyz Internship · Level 2, Task 2
+  </footer>
+
+  <script src="Level2_Task2.js"></script>
+
+</body>
+</html>
